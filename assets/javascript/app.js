@@ -182,7 +182,7 @@ $(document).ready(function() {
 
         var ans = game.quizList[game.currentQIdx].answers[game.quizList[game.currentQIdx].res];
 
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
             ans + "&api_key=dc6zaTOxFJmzC&limit=1";
 
         $.ajax({
@@ -214,7 +214,7 @@ $(document).ready(function() {
         var ans = game.quizList[game.currentQIdx].answers[game.quizList[game.currentQIdx].res];
         $("#showAnswer").text("The correct answer was: " + ans);
 
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
             ans + "&api_key=dc6zaTOxFJmzC&limit=1";
 
         $.ajax({
@@ -248,7 +248,7 @@ $(document).ready(function() {
         $("#wrongMsg").text("You ran out of time!");
         var ans = game.quizList[game.currentQIdx].answers[game.quizList[game.currentQIdx].res];
 
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
             ans + "&api_key=dc6zaTOxFJmzC&limit=1";
 
         $.ajax({
