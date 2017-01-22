@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Trivia Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <!-- link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- link to the css -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- app js -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="text-center">Trivially Trivial Trivia!</h1>
+        <div class="text-center">
+            <h3 class="grayText">Theme: The Ultimate ’90s Trivia</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center main_divs">
+                <button id="startBtn" class=" btn btn-primary btn-lg btn-block bigBtn">Start</button>
+                <h2 id="timeRem">Time Remaining:</h2>
+                <div class="panel panel-default" id="newQuestion">
+                    <div class="panel-heading">                         
+                        <h2 id="currentQuestion">New Question</h2>
+                    </div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="radio">
+                              <label id="opt1">Option 1</label>
+                            </div>
+                            <div class="radio">
+                              <label id="opt2">Option 2</label>
+                            </div>
+                            <div class="radio">
+                              <label id="opt3">Option 3</label>
+                            </div> 
+                            <div class="radio">
+                              <label id="opt4">Option 4</label>
+                            </div>                             
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="panel panel-default" id="correctAnswer">
+                    <h2 class="funText w">Yup!!</h2>
+                    <img src="" alt="" id="rightImg">
+                </div>
+                
+                <div class="panel panel-default" id="wrongAnswer">
+                    <h2 class="funText l" id="wrongMsg">Nope!!</h2>
+                    <h4 id="showAnswer">The correct answer was:</h4>
+                    <img src="" alt="" id="wrongImg">
+                </div>
+                
+                <div class="panel panel-default" id="finalTally">
+                    <div class="text-center">
+                        <h2 class="funText"> Game Over!!</h2>
+                        <h2 id="win" class="funText w"> Wins:</h2>
+                        <h2 id="loss" class="funText l"> Losses:</h2>
+                        <button id="restartBtn" class="btn btn-primary btn-lg bigBtn">Restart Game!!</button>
+                    </div>
+                </div> 
+            </div>
+            
+        </div>
+    </div>
+    </body>
+</html>

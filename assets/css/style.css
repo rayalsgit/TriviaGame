@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+body {
+    background-image: url("../images/bg.jpg");
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.main_divs {
+    min-height: 700px;
+    background-color: yellow;
+    position: relative;
+}
+
+.bigBtn {
+    width: 400px;
+    height: 50px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 33%;
+}
+
+#startBtn {}
+
+.radio {
+    font-size: 20px;
+    color: blue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.w {
+    color: green;
+}
+
+.l {
+    color: red;
+}
