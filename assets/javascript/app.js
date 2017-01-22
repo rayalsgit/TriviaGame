@@ -307,9 +307,9 @@ $(document).ready(function() {
     $("#opt4").on("click", 3, answered);
 
     // Capture Start Button Click
-    $("#startBtn").on("click", function() {
+    document.getElementById("startBtn").addEventListener("click", function() {
         // Don't refresh the page!
-        event.preventDefault();
+        //event.preventDefault();
 
         hideAll();
         // show new question UI
@@ -320,12 +320,13 @@ $(document).ready(function() {
         //start timer
         nIntervId = setTimeout(showRanOutOfTime, 10000);
 
+        //don't resubmit
+        return false;
+
     });
 
     // Capture Restart Button Click
-    $("#restartBtn").on("click", function() {
-        // Don't refresh the page!
-        event.preventDefault();
+    document.getElementById("restartBtn").addEventListener("click", function() {        
 
         // reset game object
         game.reset();
@@ -334,6 +335,9 @@ $(document).ready(function() {
 
         // rest ui to new question for the new game
         showNewQuestion();
+
+        // Don't refresh the page!
+        return false;
 
     });
 
